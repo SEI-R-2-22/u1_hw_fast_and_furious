@@ -25,7 +25,7 @@ window.onload = function (event) {
   document.body.style.backgroundColor = 'lavender'
 
   // Part 3
-
+  document.querySelectorAll('#favorite-things li')[5].remove()
   // Part 4
 
   // Part 5
