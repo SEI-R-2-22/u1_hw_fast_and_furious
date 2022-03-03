@@ -20,16 +20,34 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
+  const title = document.getElementById('main-title')
+  title.innerText = "DOM Toretto's Homepage"
 
   // Part 2
+  const bodycolor = document.querySelector('body')
+  bodycolor.style.backgroundColor = 'green';
 
   // Part 3
+  const lastitem = document.getElementById('favorite-things').children[5]
+  lastitem.remove()
 
   // Part 4
+  const fontChange = document.querySelectorAll('.special-title')
+  fontChange.forEach((node) => {
+    node.style.fontSize = '2rem';
+});
 
   // Part 5
+  const chicago = document.getElementById('past-races').children[3]
+  chicago.remove()
 
   // Part 6
+  const tallahassee = document.getElementById('past-races')
+  tallahassee.append('Tallahassee')
+  
 
   // Part 7
+let lastbox = document.getElementById("dom-adventures")
+console.log(lastbox)
+lastbox.insertAdjacentHTML('afterend', '<div class="blog-post purple"><h1>Tallahassee</h1><p>I MET TREVOR!</p></div>')
 }
