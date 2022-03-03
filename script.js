@@ -4,26 +4,34 @@ let quotes = [
   `You can have any brew you want... as long as it's a Corona.`,
   `You almost had me? You never had me - you never had your car!`,
   `I don't have friends. I have family.`,
-  `It don't matter if you win by an inch or a mile. Winning's winning.`,
-];
+  `It don't matter if you win by an inch or a mile. Winning's winning.`
+]
 
-window.onload =  function(event) {
-  
+window.onload = function (event) {
   // Random quote of the day generator
-  const randomQuote = function() {
+  const randomQuote = function () {
     document.querySelector('#quote-of-the-day').textContent = `"${
       quotes[Math.floor(Math.random() * quotes.length)]
-    }"`;
-  };
-  randomQuote();
+    }"`
+  }
+  randomQuote()
 
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
 
+  const titleText = document.querySelector('#main-title')
+  titleText.innerText = "DOM's Homepage"
+
   // Part 2
 
+  const pageBody = document.querySelector('body')
+  pageBody.style.backgroundColor = '#ddddff'
+
   // Part 3
+
+  const favThings = document.querySelector('#favorite-things')
+  favThings.removeChild(favThings.lastElementChild)
 
   // Part 4
 
