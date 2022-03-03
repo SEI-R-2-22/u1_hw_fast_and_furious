@@ -27,7 +27,9 @@ window.onload = function (event) {
   // Part 3
   document.querySelectorAll('#favorite-things li')[5].remove()
   // Part 4
-
+  document
+    .querySelectorAll('.special-title')
+    .forEach((specialTitle) => (specialTitle.style.fontSize = '2rem'))
   // Part 5
 
   // Part 6
