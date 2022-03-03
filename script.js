@@ -22,6 +22,7 @@ window.onload = function (event) {
   document.getElementById('main-title').innerText = "DOM Toretto's Homepage"
 
   // Part 2
+  document.body.style.backgroundColor = 'lavender'
 
   // Part 3
 
