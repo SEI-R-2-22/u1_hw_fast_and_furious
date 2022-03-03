@@ -19,7 +19,7 @@ window.onload = function (event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-  document.getElementById('main-title').innerText = 'Homepage by DOM Toretto'
+  document.getElementById('main-title').innerText = "DOM Toretto's Homepage"
 
   // Part 2
 
