@@ -35,9 +35,39 @@ window.onload = function (event) {
 
   // Part 4
 
+  const specialTitles = document.querySelectorAll('.special-title')
+  for (let i = 0; i < specialTitles.length; i++) {
+    specialTitles[i].style.fontSize = '2rem'
+  }
+
   // Part 5
 
+  const pastRaces = document.querySelector('#past-races')
+  pastRaces.removeChild(pastRaces.children[3])
   // Part 6
 
+  const newListItem = document.createElement('li')
+  const textOfNewListItem = document.createTextNode('Paris')
+  newListItem.appendChild(textOfNewListItem)
+  pastRaces.appendChild(newListItem)
+
   // Part 7
+
+  const newBlogPost = document.createElement('div')
+  newBlogPost.setAttribute('class', 'blog-post purple')
+
+  const newPostHeading = document.createElement('h1')
+  const textOfNewPostHeading = document.createTextNode('Paris')
+  newPostHeading.appendChild(textOfNewPostHeading)
+  newBlogPost.appendChild(newPostHeading)
+
+  const newPostText = document.createElement('p')
+  const textOfnewPostText = document.createTextNode(
+    'I JUMPED OVER THE EIFFEL TOWER WITH MY CAR!'
+  )
+  newPostText.appendChild(textOfnewPostText)
+  newBlogPost.appendChild(newPostText)
+
+  const mainSection = document.querySelector('.main')
+  mainSection.appendChild(newBlogPost)
 }
