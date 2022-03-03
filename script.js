@@ -31,7 +31,7 @@ window.onload = function (event) {
     .querySelectorAll('.special-title')
     .forEach((specialTitle) => (specialTitle.style.fontSize = '2rem'))
   // Part 5
-
+  document.getElementById('past-races').children[3].remove()
   // Part 6
 
   // Part 7
