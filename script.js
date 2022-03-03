@@ -39,4 +39,14 @@ window.onload = function (event) {
   pastRacesUl.appendChild(nycLi)
 
   // Part 7
+  const mainContent = document.querySelector('.main')
+  const blogPost = document.createElement('div')
+  blogPost.classList.add('blog-post', 'purple')
+  const h1 = document.createElement('h1')
+  h1.innerText = 'New York City'
+  blogPost.appendChild(h1)
+  const paragraph = document.createElement('p')
+  paragraph.innerText = 'THE BEST CITY IN THE WORLD!'
+  blogPost.appendChild(paragraph)
+  mainContent.appendChild(blogPost)
 }
