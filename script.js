@@ -33,6 +33,10 @@ window.onload = function (event) {
   // Part 5
   document.getElementById('past-races').children[3].remove()
   // Part 6
+  const pastRacesUl = document.getElementById('past-races')
+  const nycLi = document.createElement('li')
+  nycLi.innerText = 'New York City'
+  pastRacesUl.appendChild(nycLi)
 
   // Part 7
 }
