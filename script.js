@@ -20,16 +20,35 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
+  const mainTitle = document.querySelector('#main-title')
+    mainTitle.innerText = `I'm Dom Toretto, Welcome to My Family`
 
   // Part 2
+  document.body.style.backgroundColor = "red"
 
   // Part 3
+  let fav_list = document.querySelectorAll("#favorite-things li")
+  fav_list[fav_list.length-1].remove();
 
   // Part 4
+  document.querySelector('.special-title').style.fontSize = '2rem'
 
   // Part 5
+  document.querySelector('#past-races').querySelectorAll('li')[3].remove()
 
   // Part 6
+  document.querySelector('#past-races').append('New York City')
 
   // Part 7
+  let newBlog = document.createElement('div')
+  newBlog.setAttribute('class', 'blog-post purple')
+  let newh1 = document.createElement('h1')
+  newh1.innerText = 'New York City'
+  let newP = document.createElement('p')
+  newP.innerText = 'THE CITY THAT NEVER SLEEPS!'
+  
+  newBlog.appendChild(newh1)
+  newBlog.append(newP)
+  document.querySelector('.main').append(newBlog)
+
 }
