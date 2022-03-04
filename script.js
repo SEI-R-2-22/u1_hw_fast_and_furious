@@ -20,16 +20,44 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
+  const mainTitle = function() {
+    document.querySelector(#main-title).textContent = "Welcome to DOM Toretto's homepage!"
+  }
+  mainTitle()
 
   // Part 2
+const newBackground = function change(color) {
+  document.querySelector(body).style.backgroundColor = color
+} 
+newBackground(blue)
 
   // Part 3
 
-  // Part 4
+  const list = document.getElementById('favorite-things')
+  list.removeChild(list.firstElementChild)
 
+  // Part 4
+const changeTitleSize = function() {
+  document.getElementsByClassName("special-title")
+  for(i = 0; i < title.length; i++)
+  title.style.fontSize = "2em"
+}
   // Part 5
+  const cityList = document.getElementById("past-races")
+  cityList.removeChild(list.firstElementChild)
 
   // Part 6
+const pastRacesList = document.getElementById("past-races")
+let newRace = document.createElement('li')
+newRace.textContent = "New York"
+pastRacesList.append(newRace)
 
   // Part 7
+const addToNy = document.getElementById("past-races")
+  let div = ("<div> .blog-post </div>");
+  past-races.append(div)
+  let h1 = ("New York")
+  past-races.append(h1)
+  let p = ("I RACED DOWN TIMES SQUARE")
+  past-races.append(p)
 }
