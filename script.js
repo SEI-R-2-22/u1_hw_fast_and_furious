@@ -20,16 +20,52 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-
+document.querySelector('#main-title').innerHTML = 'DOM Toretto'
   // Part 2
-
+document.body.style.backgroundColor = 'teal'
   // Part 3
-
+ let favoriteThings = document.querySelector('#favorite-things').lastElementChild
+    document.getElementById('favorite-things').removeChild(favoriteThings)
   // Part 4
+  document.getElementById("quote-title").style.fontSize = "2em";
+
+  document.getElementById("dom-adventures").style.fontSize = "2em";
 
   // Part 5
+function noChicago() {
+  let pastRaces = document.querySelector('#past-races').children
+   for (let index = 0; index < pastRaces.length; index++) {
+     let Races = pastRaces[index].innerHTML;
+     
+    
+   }
+   
+ }
+ noChicago()
 
   // Part 6
-
+// let races = document.querySelector('#past-races').appendChild(li)
+// console.log(noChicago)
+function addRace() {
+  var  races = document.getElementById('past-races');
+  var addR = document.createElement('li');
+  addR.appendChild(document.createTextNode("pikes Peak"));
+  races.appendChild(addR);
+}
+addRace()
   // Part 7
+function newBlog() {
+let post = document.querySelector('.main');
+let newPost = Object.assign(document.createElement('div'), { className: 'blog-post'});
+let header = document.createElement('h1');
+let para = document.createElement('p');
+  post.appendChild(newPost); 
+  newPost.style.backgroundColor = 'purple'
+  header.innerHTML = 'Pikes peak';
+  newPost.appendChild(header);
+  para.innerHTML = " Most dangerouse race, along a cliff side ";
+  header.appendChild(para);
+  para.style.color = 'black'
+}
+newBlog()
 }
