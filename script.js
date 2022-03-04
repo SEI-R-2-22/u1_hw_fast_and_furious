@@ -20,16 +20,20 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-
+const mainTitle = document.querySelector('#main-title');
+  mainTitle.innerHTML = '<h1>DOM TORETTO</h1>';
   // Part 2
-
+document.body.style.backgroundColor = 'orange';
   // Part 3
-
+const list = document.getElementById('favorite-things');
+  list.removeChild(list.lastElementChild);
   // Part 4
-
+specialTitle.innerHTML = '.special-title';
+  specialTitle.style.fontSize = '25px';
   // Part 5
 
   // Part 6
 
   // Part 7
+
 }
