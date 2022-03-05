@@ -16,7 +16,7 @@ window.onload =  function(event) {
     }"`;
   };
   randomQuote();
-
+  
   // Do all of your work inside the window.onload function (in other words, here!)
   
   // Part 1
@@ -36,5 +36,25 @@ window.onload =  function(event) {
   // Part 6
   document.querySelector('#past-races').append('Argentina')
   //Part 7
+
+  let main = document.querySelectorAll(".main")
+  let newDiv = document.createElement('div')
+  let banana = document.createElement('h1')
+  let p = document.createElement('p')
+  
+
+
+  newDiv.setAttribute('class', 'blog-post purple')
+  banana.innerHTML= "Argentina"
+  p.innerHTML = "I DRIFTED around a cow🐮 while drinking mates🧉"
+  newDiv.appendChild(banana)
+  newDiv.appendChild(p)
+  main[0].appendChild(newDiv)
+
+
+  
+  
+
+ 
   
 }
