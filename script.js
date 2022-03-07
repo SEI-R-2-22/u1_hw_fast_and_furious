@@ -20,16 +20,27 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-
+  document.querySelector("#main-title").innerText = "Fast & Furious";
   // Part 2
-
+document.body.style.backgroundColor = "White";
   // Part 3
-
+  document.querySelectorAll('#favorite-things li')[5].remove();
   // Part 4
-
+document.querySelectorAll('.special-title li').fontSize ='2rem';
   // Part 5
-
+  document.querySelector('#past-races').querySelectorAll('li')[3].remove();
   // Part 6
+const city = document.getElementById('past-races');
 
+let newListItem = document.createElement('li');
+
+newListItem.innerText = 'Nashville';
+
+  newListItem.appendChild();
+
+  // newListItem.appendChild();
   // Part 7
+      
+  
+  // I'm lost. I have no idea where to begin. Classmates tried to help me, with no success.
 }
