@@ -20,16 +20,19 @@ window.onload =  function(event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-
+  let mainTitle = document.querySelector('#main-title')
+  mainTitle.innerHTML = 'Dom FnF'
   // Part 2
-
+  document.querySelector('body').style.color ="green"
   // Part 3
-
+  document.querySelectorAll('#favorite-things li')[5].remove()
   // Part 4
-
+  document.querySelectorAll('.special-title').forEach((value) => value.style.fontSize ="2rem")
   // Part 5
-
+  document.querySelectorAll('#past-races li')[3].remove()
   // Part 6
-
-  // Part 7
+  let newLocation = document.createElement('li')
+  newLocation.innerHTML = 'Vietnam'
+  chicago.appendChild(newLocation)
+  
 }
